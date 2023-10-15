@@ -20,7 +20,8 @@ function initials(value){
   return (
     selectedData && (
       <div className="dash-container">
-        {selectedData.map((elem, index) => {          
+        {selectedData.map((elem, index) => {   
+          console.log(elem[0])       
           return (
             <>
               <div key={index} className="dashCardContainer">
@@ -39,8 +40,7 @@ function initials(value){
                       <div className="user-cards">{elem[index]?.value?.length}</div>
                   </div>
                   <div className="right-view">
-                    <span>+</span>
-                    <span style={{ letterSpacing: "2px" }}>...</span>
+                    <span className="plus">+</span>
                   </div>
                 </div>
                 <div className="dashList flex-gap-10">

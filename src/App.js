@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import React, { useEffect} from 'react';
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
+import DashBoard from './components/DashBoard/Window';
+import { useDispatch, useSelector} from 'react-redux'
+import { fetchAllData } from './store/DataAction';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+  const dispatch = useDispatch();
+  const {allTickets} = useSelector(state => state.DataReducer);
+   
+  useEffect(() => {
+    dispatch(fetchAllData());
+  }, [dispatch])
+
+  return allTickets ? (
+    <div className='cont'>
+       <NavBar />
+       <DashBoard />
     </div>
-  );
+  ) : null ;
 }
 
 export default App;
+
+/*
+
+const App = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <NavBar />
+  </React.StrictMode>
+); 
+
+export default App;
+*/

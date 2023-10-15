@@ -1,0 +1,78 @@
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    padding: 21px 0px 21px 50px;
+    background: #000000;
+}
+
+.display-button{
+    position: relative;
+}
+
+.select-group{
+    color: #000000;
+}
+
+.select-style{
+    box-shadow: 2px 2px 3px 1px #222222;
+    border: none;
+    width: 125px;
+    height: 27px;
+    background: #222222;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 2px 5px;
+}
+
+.drop-box{
+    left: 195px;
+    letter-spacing: 0.3px;
+    box-shadow: 2px 2px 4px 0px #b7b9bc;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 30px;
+    padding-bottom: 34px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #ffffff;
+    margin-top: 13px;
+    z-index: 10;
+}
+
+.drop-box > *{
+    width: 100%;
+}
+
+.btn{
+    box-shadow: 2px 2px 6px 1px #106e27;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    padding-top: 3px;
+    height: 27px;
+    width: 110px;
+    background: #218c3b;
+    border: none;
+}
+
+.quicksell-icon{
+    margin-right: 20px;
+    width: 175px;
+    margin-top: -15px;
+    margin-bottom: -27px;
+}
+
+.filter-icon{
+    width: 14px;
+    margin: 0px 8px -3px 0px;
+}
+
+.dropdown-icon{
+    margin: 0px -2px 0px 6px;
+    width: 11px;
+}

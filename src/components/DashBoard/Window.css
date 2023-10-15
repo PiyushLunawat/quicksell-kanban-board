@@ -1,0 +1,53 @@
+.dash-container{
+    justify-content: space-evenly;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #222222;
+    padding: 100px 10px;
+}
+
+.dashCardContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 5px;
+    width : 300px;
+}
+
+.user-icon{
+    position: inherit;
+    padding-top: 3px;
+    background: #218c3b;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.show-status{
+    position: inherit;
+    margin-left: 18px;
+    margin-top: -6px;
+    width: 10px;
+    height: 10px;
+    background: silver;
+    border-radius: 50%;
+    border-color: white;
+}
+
+.user-name{
+    display: inline-block;
+    color: #ffffff;
+}
+
+.user-cards{
+    display: inline-block;
+    color: #8e8e8e;
+    margin-left: 10px;
+}

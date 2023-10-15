@@ -3,7 +3,6 @@
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    flex-wrap: wrap;
     background: #222222;
     padding: 100px 10px;
 }

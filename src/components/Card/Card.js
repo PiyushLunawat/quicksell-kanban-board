@@ -7,8 +7,6 @@ const Card = ({id, title, tag, status}) => {
     const { selectedData, user } = useSelector(
         (state) => state.SelectDataReducer
       );
-      selectedData.map((elem, index) => {
-      })
 
     function initials(value){
         var result = "";

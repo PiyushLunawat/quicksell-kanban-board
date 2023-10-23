@@ -51,10 +51,14 @@ const NavBar = () =>{
     }
   }, [allTickets, dispatch, groupValue, allUser, orderValue]);
 
+  const handleReload = () => {
+    window.location.reload(); // Reload the page when the icon is clicked
+  };
+
     return (
         <div className="nav-bar">
           <div className="display-button">
-          <img src={icon} alt="icon" className="quicksell-icon"></img>
+          <img src={icon} alt="icon" className="quicksell-icon" onClick={handleReload}></img>
           <button
               className="p-10 f-16 btn"
               onClick={() => setDisplay(!display)}>

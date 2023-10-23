@@ -20,8 +20,7 @@ function initials(value){
   return (
     selectedData && (
       <div className="dash-container">
-        {selectedData.map((elem, index) => {   
-          console.log(elem[0])       
+        {selectedData.map((elem, index) => { 
           return (
             <>
               <div key={index} className="dashCardContainer">

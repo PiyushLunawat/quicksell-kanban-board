@@ -36,7 +36,7 @@ const Card = ({id, title, tag, status}) => {
             <p>{title}</p>
         </div>
         <div className="card-tags">
-        <div className="tags color-grey"> ... </div>
+        <div className="tags color-grey">...</div>
             {
                 tag?.map((elem, index) => {
                     return <div key={index} className="tags color-grey"> <span>•</span> {tag}</div>

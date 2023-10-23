@@ -14,6 +14,7 @@
 }
 
 .select-style{
+    cursor: pointer;
     box-shadow: 2px 2px 3px 1px #222222;
     border: none;
     width: 125px;
@@ -48,6 +49,7 @@
 }
 
 .btn{
+    cursor: pointer;
     box-shadow: 2px 2px 6px 1px #106e27;
     font-size: 14px;
     font-weight: 600;
@@ -61,6 +63,7 @@
 }
 
 .quicksell-icon{
+    cursor: pointer;
     margin-right: 20px;
     width: 175px;
     margin-top: -15px;
